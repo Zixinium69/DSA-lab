@@ -1,17 +1,15 @@
 #include<iostream>
-#include"sorting.cpp"
 using namespace std;
 
-void dis_count(int arr[],int n){
-    bubble_sort(arr,n);
-    int flag=1;
+void invert_count(int arr[],int n){
+    int flag=0;
     for(int i=0;i<n-1;i++){
-        if(arr[i]!=arr[i+1]){
+        if(arr[i]>arr[i+1]){
             flag++;
         }
     }
-    cout<<"Number of elements: "<<flag;
+    cout<<"Number of inversions: "<<flag;
 }
 
-
-
+ 
+ 
